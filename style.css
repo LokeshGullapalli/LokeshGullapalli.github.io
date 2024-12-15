@@ -99,7 +99,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Skills and Certifications */
+/* Skills, Certifications, and Projects Styling */
 .subtitle {
     text-align: center;
     font-size: 2.5rem;
@@ -125,49 +125,30 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.skill-box img {
-    max-width: 50px;
-    margin-bottom: 10px;
-}
-
 .skill-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-
-/* Projects Section */
-#Projects .skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin: 0 auto;
-    max-width: 90%;
-}
-
-.skill-box {
-    background: #2b2e3b;
-    border-radius: 10px;
-    text-align: center;
-    padding: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    overflow: hidden;
-}
-
-.skill-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 15px rgba(0, 238, 255, 0.5);
-}
-
+/* Small Images for Skills */
 .skill-box img {
-    max-width: 120px; /* Increased image size */
+    max-width: 50px; /* Default small size */
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
-.skill-box:hover img {
-    transform: scale(1.2); /* Zoom effect on hover */
+/* Larger Images for Projects and Certifications */
+#Projects .skill-box img,
+#Certifications .skill-box img {
+    max-width: 120px; /* Larger size */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#Projects .skill-box:hover img,
+#Certifications .skill-box:hover img {
+    transform: scale(1.2); /* Zoom effect */
 }
 
 .skill-box h3 {
@@ -197,8 +178,6 @@ body {
 .skill-box a:hover {
     color: #fff;
 }
-
-
 
 /* Custom Shape Divider */
 .custom-shape-divider {
@@ -319,23 +298,3 @@ footer {
         font-size: 2rem;
     }
 }
-
-/* General Styling for All Images */
-.skill-box img {
-    max-width: 50px; /* Default small size for skills */
-    height: auto;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Larger Images for Projects and Certifications */
-#Projects .skill-box img,
-#Certifications .skill-box img {
-    max-width: 120px; /* Increase size for projects and certifications */
-}
-
-#Projects .skill-box:hover img,
-#Certifications .skill-box:hover img {
-    transform: scale(1.2); /* Zoom effect only for Projects and Certifications */
-}
-
