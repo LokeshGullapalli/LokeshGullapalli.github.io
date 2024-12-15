@@ -132,7 +132,7 @@ body {
 
 /* Small Images for Skills */
 .skill-box img {
-    max-width: 50px; /* Default small size */
+    max-width: 30px; /* Default small size */
     height: auto;
     margin-bottom: 10px;
     transition: transform 0.3s ease-in-out;
