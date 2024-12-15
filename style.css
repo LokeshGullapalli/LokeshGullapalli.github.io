@@ -135,28 +135,69 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
+
 /* Projects Section */
-.skills-container .skill-box h3 {
-    font-size: 1.2rem;
-    margin-top: 10px;
+#Projects .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.skill-box {
+    background: #2b2e3b;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px rgba(0, 238, 255, 0.5);
+}
+
+.skill-box img {
+    max-width: 120px; /* Increased image size */
+    height: auto;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-box:hover img {
+    transform: scale(1.2); /* Zoom effect on hover */
+}
+
+.skill-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0ef;
+}
+
+.skill-box p {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.skill-box a {
+    color: #0ef;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.skill-box a i {
+    margin-right: 5px;
+}
+
+.skill-box a:hover {
     color: #fff;
 }
 
-.skills-container .skill-box p {
-    font-size: 1rem;
-    color: #bbb;
-}
-
-.skills-container a {
-    color: #0ef;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.skills-container a:hover {
-    text-decoration: underline;
-}
 
 /* Custom Shape Divider */
 .custom-shape-divider {
