@@ -199,6 +199,7 @@ body {
 }
 
 
+
 /* Custom Shape Divider */
 .custom-shape-divider {
     position: relative;
@@ -319,4 +320,22 @@ footer {
     }
 }
 
+/* General Styling for All Images */
+.skill-box img {
+    max-width: 50px; /* Default small size for skills */
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Larger Images for Projects and Certifications */
+#Projects .skill-box img,
+#Certifications .skill-box img {
+    max-width: 120px; /* Increase size for projects and certifications */
+}
+
+#Projects .skill-box:hover img,
+#Certifications .skill-box:hover img {
+    transform: scale(1.2); /* Zoom effect only for Projects and Certifications */
+}
 
