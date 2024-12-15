@@ -319,15 +319,4 @@ footer {
     }
 }
 
-/* Project Image Styling */
-.skill-box img {
-    max-width: 100px; /* Increase the image width */
-    height: auto;     /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Add some space below the image */
-    transition: transform 0.3s ease-in-out; /* Smooth zoom effect on hover */
-}
-
-.skill-box:hover img {
-    transform: scale(1.2); /* Slightly enlarge the image on hover */
-}
 
