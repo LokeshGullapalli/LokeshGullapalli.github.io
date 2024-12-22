@@ -9,14 +9,14 @@
 
 /* Blue Gradient Background for Main Page */
 body.index {
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    background: linear-gradient(135deg, #232526, #414345);
     color: #ffffff;
     line-height: 1.6;
 }
 
 /* Timeline Page Background */
 body.timeline {
-    background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+    background: linear-gradient(135deg, #141e30, #243b55);
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
