@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Title -->
     <title>Timeline | Lokesh Gullapalli</title>
+
+    <!-- Links -->
     <link rel="stylesheet" href="./files/style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header class="header" id="header">
-        <a class="logo" href="#Home">Lokesh Gullapalli</a>
+        <a class="logo" href="index.html">Lokesh Gullapalli</a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><i class='bx bx-menu'></i></label>
         <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="index.html#Skills">Skills</a>
@@ -18,56 +27,75 @@
         </nav>
     </header>
 
+    <!-- Academics Section -->
     <section id="Academics" class="acc-sec">
         <center><h1>My <span>Academics</span></h1></center>
-        <div class="timeline">
-            <div class="containerTline left-container">
-                <div class="text-box">
-                    <h2>Bachelor's Degree</h2>
-                    <h3>Chaitanya Bharathi Institute of Technology</h3>
-                    <small>2020 - 2022</small>
-                    <p>Graduated with a 3.3 GPA in Electrical and Electronics Engineering.</p>
+        <div class="timeline-container">
+            <div class="timeline academics">
+                <div class="containerTline left-container">
+                    <img src="./img/CBIT.png" alt="Bachelor's Degree">
+                    <div class="text-box">
+                        <h2 class="hed">Bachelor's Degree</h2>
+                        <h3>Chaitanya Bharathi Institute of Technology</h3>
+                        <small>2020 - 2022</small>
+                        <p>Graduated with a 3.3 GPA in Electrical and Electronics Engineering.</p>
+                        <span class="left-container-arrow"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="containerTline right-container">
-                <div class="text-box">
-                    <h2>Master's Degree</h2>
-                    <h3>The University of Texas at Dallas</h3>
-                    <small>2022 - 2024</small>
-                    <p>Pursuing a Master of Science in Business Analytics with a 3.8 GPA.</p>
+                <div class="containerTline right-container">
+                    <img src="./img/UTD.png" alt="Master's Degree">
+                    <div class="text-box">
+                        <h2 class="hed">Master's Degree</h2>
+                        <h3>The University of Texas at Dallas</h3>
+                        <small>2022 - 2024</small>
+                        <p>Pursuing a Master of Science in Business Analytics with a 3.8 GPA.</p>
+                        <span class="right-container-arrow"></span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Experience Section -->
     <section id="Experience" class="exp-sec">
         <center><h1>My <span>Experience</span></h1></center>
-        <div class="timeline">
-            <div class="containerTline left-container">
-                <div class="text-box">
-                    <h2>Software Engineer</h2>
-                    <h3>Sree InfoTech</h3>
-                    <small>2024 - Present</small>
-                    <p>Optimized data pipelines and deployed scalable APIs using Python & AWS.</p>
+        <div class="timeline-container">
+            <div class="timeline internships">
+                <div class="containerTline left-container">
+                    <img src="./img/software_engineer.png" alt="Software Engineer">
+                    <div class="text-box">
+                        <h2 class="hed">Software Engineer</h2>
+                        <h3>Sree InfoTech</h3>
+                        <small>2024 - Present</small>
+                        <p>Optimized data pipelines and deployed scalable APIs using Python & AWS.</p>
+                        <span class="left-container-arrow"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="containerTline right-container">
-                <div class="text-box">
-                    <h2>Graduate Teaching Assistant</h2>
-                    <h3>The University of Texas at Dallas</h3>
-                    <small>2024</small>
-                    <p>Conducted labs on AWS, Azure, Jenkins, and Docker for 240+ students.</p>
+                <div class="containerTline right-container">
+                    <img src="./img/teaching_assistant.png" alt="Graduate Teaching Assistant">
+                    <div class="text-box">
+                        <h2 class="hed">Graduate Teaching Assistant</h2>
+                        <h3>The University of Texas at Dallas</h3>
+                        <small>2024</small>
+                        <p>Conducted labs on AWS, Azure, Jenkins, and Docker for 240+ students.</p>
+                        <span class="right-container-arrow"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="containerTline left-container">
-                <div class="text-box">
-                    <h2>Cloud Engineer</h2>
-                    <h3>Fulcrum GT</h3>
-                    <small>2021 - 2022</small>
-                    <p>Engineered auto-scaling clusters, optimized S3 policies, and managed ETL pipelines.</p>
+                <div class="containerTline left-container">
+                    <img src="./img/cloud_engineer.png" alt="Cloud Engineer">
+                    <div class="text-box">
+                        <h2 class="hed">Cloud Engineer</h2>
+                        <h3>Fulcrum GT</h3>
+                        <small>2021 - 2022</small>
+                        <p>Engineered auto-scaling clusters, optimized S3 policies, and managed ETL pipelines.</p>
+                        <span class="left-container-arrow"></span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Script -->
+    <script src="./files/script.js"></script>
 </body>
 </html>
