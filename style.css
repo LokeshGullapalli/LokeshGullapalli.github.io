@@ -16,7 +16,7 @@ body.index {
 
 /* Timeline Page Background */
 body.timeline {
-    background: linear-gradient(to right, #1e1e2e, #252530);
+    background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
