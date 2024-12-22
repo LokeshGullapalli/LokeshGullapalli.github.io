@@ -382,3 +382,32 @@ body {
     left: auto;
     right: -75px;
 }
+
+
+.custom-shape-divider-top-academics,
+.custom-shape-divider-bottom-academics,
+.custom-shape-divider-top-experience,
+.custom-shape-divider-bottom-experience {
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-academics svg,
+.custom-shape-divider-bottom-academics svg,
+.custom-shape-divider-top-experience svg,
+.custom-shape-divider-bottom-experience svg {
+    position: absolute;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100%;
+}
+
+.custom-shape-divider-top-academics .shape-fill,
+.custom-shape-divider-bottom-academics .shape-fill,
+.custom-shape-divider-top-experience .shape-fill,
+.custom-shape-divider-bottom-experience .shape-fill {
+    fill: #1e1e2e; /* Match your background color for seamless transition */
+}
+
