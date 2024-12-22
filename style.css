@@ -9,7 +9,7 @@
 
 /* Blue Gradient Background for Main Page */
 body.index {
-    background: linear-gradient(135deg, #8e44ad, #3498db);
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
     color: #ffffff;
     line-height: 1.6;
 }
