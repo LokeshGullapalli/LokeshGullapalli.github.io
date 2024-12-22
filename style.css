@@ -132,7 +132,7 @@ body {
 
 /* Small Images for Skills */
 .skill-box img {
-    max-width: 20px; /* Default small size */
+    max-width: 30px; /* Default small size */
     height: auto;
     margin-bottom: 10px;
     transition: transform 0.3s ease-in-out;
@@ -141,7 +141,7 @@ body {
 /* Larger Images for Projects and Certifications */
 #Projects .skill-box img,
 #Certifications .skill-box img {
-    max-width: 120px; /* Larger size */
+    max-width: 200px; /* Larger size */
     height: auto;
     margin-bottom: 15px;
 }
