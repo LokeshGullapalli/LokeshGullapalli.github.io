@@ -279,3 +279,23 @@ body.timeline {
         margin-bottom: 10px;
     }
 }
+
+/* Social Media Icons in Home Section */
+.home-sci {
+    display: flex;
+    gap: 20px; /* Space between icons */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home-sci a {
+    font-size: 2.5rem; /* Increased icon size */
+    color: #0ef;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.home-sci a:hover {
+    color: #fff;
+    transform: scale(1.2); /* Enlarge icon slightly on hover */
+}
+
