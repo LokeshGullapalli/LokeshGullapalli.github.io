@@ -59,11 +59,17 @@ body.timeline {
     margin-left: 20px;
     font-size: 1rem;
     transition: color 0.3s;
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
 }
 
 .header nav a:hover,
 .header nav a.active {
     color: #0ef;
+}
+
+.header nav a {
+    animation-delay: calc(var(--i) * 0.2s);
 }
 
 /* Section Titles */
@@ -73,12 +79,12 @@ body.timeline {
     font-size: 2.5rem;
     color: #0ef;
     margin-bottom: 20px;
-    margin-top: 80px; /* Add top margin to create space */
+    margin-top: 80px;
 }
 
 /* Specific Styling for Education Section */
 #Education {
-    padding-top: 100px; /* Ensure enough space below the header */
+    padding-top: 100px;
 }
 
 /* Skills and Certifications Section */
@@ -103,7 +109,7 @@ body.timeline {
 }
 
 .skill-box img {
-    max-width: 30px; /* Default small size for skills */
+    max-width: 30px;
     height: auto;
     margin-bottom: 10px;
     transition: transform 0.3s ease-in-out;
@@ -125,29 +131,49 @@ body.timeline {
 /* Home Section */
 .home {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 150px 10%;
-    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    padding: 0 10%;
 }
 
-.home-content h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #fff;
+.home-content h3,
+.home-content h1,
+.home-content h4,
+.home-content p,
+.btn-box {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.8s ease-out forwards;
 }
 
 .home-content h3 {
     font-size: 1.5rem;
     color: #0ef;
+    animation-delay: 0.2s;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px 0;
+    animation-delay: 0.4s;
+}
+
+.home-content h4 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    animation-delay: 0.6s;
 }
 
 .home-content p {
-    margin-top: 10px;
     font-size: 1.1rem;
+    margin-top: 15px;
+    animation-delay: 0.8s;
 }
 
-/* Button Styling */
 .btn-box {
     display: inline-block;
     margin-top: 20px;
@@ -157,6 +183,7 @@ body.timeline {
     color: #000;
     font-weight: bold;
     text-decoration: none;
+    animation-delay: 1s;
     transition: all 0.3s ease;
 }
 
@@ -174,7 +201,6 @@ body.timeline {
     padding: 40px 10%;
 }
 
-/* Timeline Items */
 .timeline-item {
     display: flex;
     align-items: center;
@@ -220,32 +246,25 @@ body.timeline {
     font-size: 1rem;
 }
 
-/* Shape Divider for Sections */
-.custom-shape-divider {
-    position: relative;
-    height: 80px;
-    overflow: hidden;
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.custom-shape-divider svg {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.shape-fill {
-    fill: #1e1e2e;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #1e1e2e;
-    color: #fff;
-    font-size: 0.9rem;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Responsive Design */
