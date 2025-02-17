@@ -301,8 +301,8 @@ body.timeline {
 
 /* About Section */
 .about {
-    padding: 4rem 9%;
-    background: linear-gradient(to right bottom, #f8f9fa 50%, #ffffff 50%);
+    padding: 8rem 9% 4rem;
+    background: linear-gradient(135deg, #141e30dd, #243b55dd);
 }
 
 .about-container {
@@ -313,7 +313,7 @@ body.timeline {
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 3rem;
+    gap: 4rem;
     align-items: center;
 }
 
@@ -323,90 +323,134 @@ body.timeline {
 }
 
 .avatar-frame {
-    background: #fff;
+    background: #2b2e3b;
     padding: 1rem;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(14, 239, 239, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.avatar-frame:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(14, 239, 239, 0.2);
 }
 
 .profile-avatar {
     width: 100%;
     max-width: 300px;
     border-radius: 15px;
+    border: 2px solid #0ef;
 }
 
 .tech-badges {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .tech-badges i {
     font-size: 2.5rem;
-    color: #2f3542;
+    color: #0ef;
     transition: all 0.3s ease;
+    padding: 1rem;
+    background: #2b2e3b;
+    border-radius: 10px;
 }
 
-.about-content .subtitle {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+.tech-badges i:hover {
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(14, 239, 239, 0.4);
 }
 
 .dynamic-content {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    background: #2b2e3b;
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid #0ef3;
+    position: relative;
+    overflow: hidden;
+}
+
+.dynamic-content::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, #0ef, transparent);
+    animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .focus-text {
-    font-size: 1.4rem;
-    color: #2f3542;
-    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.neon {
+    color: #0ef;
+    text-shadow: 0 0 10px rgba(14, 239, 239, 0.6);
 }
 
 .tech-stack {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 2rem 0;
 }
 
 .tech-stack li {
+    padding: 1.2rem;
     margin: 1rem 0;
-    padding: 0.8rem 1.2rem;
-    background: #f8f9fa;
+    background: #141e30;
     border-radius: 8px;
     display: flex;
     align-items: center;
     gap: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.tech-stack li:hover {
+    transform: translateX(10px);
+}
+
+.tech-stack i {
+    font-size: 1.8rem;
 }
 
 .current-obsession {
-    margin-top: 2rem;
+    position: relative;
+    z-index: 1;
     padding: 1.5rem;
-    background: #e8f4fc;
+    background: #141e30;
     border-radius: 10px;
-    text-align: center;
+    margin-top: 2rem;
+    border: 1px solid #0ef3;
 }
 
-.highlight {
+.neon-box {
     display: inline-block;
+    padding: 0.5rem 1.2rem;
     margin: 0 0.5rem;
-    padding: 0.3rem 0.8rem;
-    background: #fff;
-    border-radius: 20px;
-    font-weight: 600;
+    background: #0ef1;
+    border-radius: 30px;
+    border: 1px solid #0ef;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
-/* Hover Effects */
-.avatar-frame:hover {
-    transform: translateY(-5px);
-}
-
-.tech-badges i:hover {
-    color: #3498db;
-    transform: scale(1.15);
+.neon-box:hover {
+    background: #0ef;
+    color: #141e30;
+    box-shadow: 0 0 15px #0ef;
 }
 
 @media (max-width: 768px) {
@@ -415,7 +459,11 @@ body.timeline {
     }
     
     .profile-visual {
-        max-width: 70%;
-        margin: 0 auto 2rem;
+        max-width: 80%;
+        margin: 0 auto 3rem;
+    }
+    
+    .dynamic-content {
+        padding: 1.5rem;
     }
 }
