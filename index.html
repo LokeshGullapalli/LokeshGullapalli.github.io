@@ -1,124 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lokesh Gullapalli - Data Engineer Portfolio showcasing skills, certifications, projects, and experiences in data engineering, cloud, and DevOps.">
-    <meta name="keywords" content="Lokesh Gullapalli, Data Engineer, AWS, DevOps, Portfolio">
-
+    <meta name="description" content="Lokesh Gullapalli - Data Engineer Portfolio">
+    <meta name="keywords" content="Data Engineering, AWS, DevOps, Cloud Architecture">
     <title>Lokesh Gullapalli</title>
-
-    <!-- Stylesheets -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik&amp;display=swap" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
-    <!-- Scripts -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="./script.js"></script>
-
-    <!-- Add this in head section -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 <body class="index">
-    <!-- Header -->
     <header class="header" id="header">
         <a class="logo" href="#Home">Lokesh Gullapalli</a>
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <label for="menu-toggle" class="menu-icon"><i class='bx bx-menu'></i></label>
         <nav class="navbar" id="myLinks">
-            <a href="#Home" style="--i:1" class="active">Home</a>
-            <a href="#Skills" style="--i:2">Skills</a>
-            <a href="#Certifications" style="--i:3">Certifications</a>
-            <a href="#Projects" style="--i:4">Projects</a>
-            <a href="#Contact" style="--i:5">Contact</a>
+            <a href="#Home" class="active">Home</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Certifications">Certifications</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
         </nav>
     </header>
 
-<!-- Home Section -->
-<section class="home" id="Home">
-    <div class="home-content">
-        <h3 style="--i:1">Hello, I'm</h3>
-        <h1 style="--i:2">Lokesh Gullapalli</h1>
-        <h4 style="--i:3">I'm passionate about <span class="typed-text"></span></h4>
-        <p style="--i:4">I specialize in designing scalable data pipelines, optimizing cloud infrastructure, and delivering efficient data-driven solutions.</p>
-        <a href="./timeline.html" class="btn-box" style="--i:5">View My Journey</a>
-    </div>
-    <div class="home-sci">
-        <a href="https://www.linkedin.com/in/lokesh-gullapalli/" style="--i:6" target="_blank"><i class='bx bxl-linkedin'></i></a>
-        <a href="https://github.com/LokeshGullapalli" style="--i:7" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="https://medium.com/@lokeshchowdary7117" style="--i:7" target="_blank"><i class='bx bxl-medium'></i></a>
-    </div>
-</section>
+    <section class="home" id="Home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>Lokesh Gullapalli</h1>
+            <h4>I'm passionate about <span class="typed-text"></span></h4>
+            <p>I specialize in designing scalable data pipelines and cloud-native solutions.</p>
+            <a href="./timeline.html" class="btn-box">View My Journey</a>
+        </div>
+        <div class="home-sci">
+            <a href="https://www.linkedin.com/in/lokesh-gullapalli/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/LokeshGullapalli" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://medium.com/@lokeshchowdary7117" target="_blank"><i class='bx bxl-medium'></i></a>
+        </div>
+    </section>
 
-
-    <!-- Typed.js Initialization -->
-    <script>
-        const typed = new Typed('.typed-text', {
-            strings: ['Cloud Computing', 'Generative AI', 'Machine Learning', 'Data Engineering'],
-            typeSpeed: 50,
-            backSpeed: 30,
-            backDelay: 2000,
-            loop: true,
-        });
-    </script>
-</body>
-</html>
-
-
-
-
-<!-- Updated About Section -->
-<section class="about" id="About">
-    <h1 class="subtitle">About <span>Me</span></h1>
-    <div class="about-container">
-        <div class="about-grid">
-            <div class="profile-visual reveal">
-                <div class="avatar-frame">
-                    <img src="./img/avatar.png" alt="Lokesh Avatar" class="profile-avatar">
-                    <div class="tech-badges">
-                        <i class="fab fa-aws pulse"></i>
-                        <i class="fas fa-code pulse"></i>
-                        <i class="fas fa-cloud pulse"></i>
-                        <i class="fas fa-database pulse"></i>
+    <section class="about" id="About">
+        <h1 class="subtitle">About <span>Me</span></h1>
+        <div class="about-container">
+            <div class="about-grid">
+                <div class="profile-visual reveal">
+                    <div class="avatar-frame">
+                        <img src="./img/avatar.png" alt="Lokesh Avatar" class="profile-avatar">
+                        <div class="tech-badges">
+                            <i class="fab fa-aws pulse"></i>
+                            <i class="fas fa-code pulse"></i>
+                            <i class="fas fa-cloud pulse"></i>
+                            <i class="fas fa-database pulse"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="about-content reveal">
-                <div class="dynamic-content">
-                    <p class="focus-text">Turning cloud complexity into <span class="neon">scalable solutions</span></p>
-                    <div class="about-passion">
-                        <p>I architect <span class="neon">AWS infrastructure</span> that powers data-intensive applications. Core competencies:</p>
-                        <ul class="tech-stack">
-                            <li>
-                                <i class='bx bxs-component neon'></i>
-                                <span>Infrastructure as Code</span> (Terraform + ArgoCD)
-                            </li>
-                            <li>
-                                <i class='bx bx-shield-quarter neon'></i>
-                                <span>Security-First DevOps</span> (AWS EKS + GitOps)
-                            </li>
-                            <li>
-                                <i class='bx bx-brain neon'></i>
-                                <span>ML Data Pipelines</span> (PySpark + Airflow)
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="current-obsession">
-                        <p>Currently optimizing: 
-                            <span class="neon-box">K8s CostOps</span>
-                            <span class="neon-box">GenAI Pipelines</span>
-                            <span class="neon-box">Lakehouse Architectures</span>
-                        </p>
+                <div class="about-content reveal">
+                    <div class="dynamic-content">
+                        <p class="focus-text">Turning cloud complexity into <span class="neon">scalable solutions</span></p>
+                        <div class="about-passion">
+                            <p>I architect <span class="neon">AWS infrastructure</span> that powers data-intensive applications:</p>
+                            <ul class="tech-stack">
+                                <li>
+                                    <i class='bx bxs-component neon'></i>
+                                    <span>Infrastructure as Code</span> (Terraform + ArgoCD)
+                                </li>
+                                <li>
+                                    <i class='bx bx-shield-quarter neon'></i>
+                                    <span>Security-First DevOps</span> (AWS EKS + GitOps)
+                                </li>
+                                <li>
+                                    <i class='bx bx-brain neon'></i>
+                                    <span>ML Data Pipelines</span> (PySpark + Airflow)
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="current-obsession">
+                            <p>Currently optimizing: 
+                                <span class="neon-box">K8s CostOps</span>
+                                <span class="neon-box">GenAI Pipelines</span>
+                                <span class="neon-box">Lakehouse Architectures</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <section id="Skills">
+        <h1 class="subtitle">My <span>Skills</span></h1>
+        <div class="skills-container">
 
 
     <!-- Skills Section -->
@@ -321,16 +296,24 @@
                 <li><i class="bx bxl-gmail"></i> lokeshchowdary7117@gmail.com</li>
             </ul>
             <div class="home-sci">
-                <a href="https://www.linkedin.com/in/lokesh-gullapalli/" style="--i:6" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/LokeshGullapalli" style="--i:7" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://medium.com/@lokeshchowdary7117" style="--i:7" target="_blank"><i class='bx bxl-medium'></i></a>
+                <a href="https://www.linkedin.com/in/lokesh-gullapalli/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/LokeshGullapalli" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://medium.com/@lokeshchowdary7117" target="_blank"><i class='bx bxl-medium'></i></a>
             </div>
         </center>
     </section>
 
-    <!-- Go to Top Button -->
     <a href="#Home" class="top"><i class='bx bx-up-arrow-alt'></i></a>
 
-    <script src="./files/script.js"></script>
+    <script>
+        const typed = new Typed('.typed-text', {
+            strings: ['Cloud Computing', 'Generative AI', 'Machine Learning', 'Data Engineering'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 2000,
+            loop: true,
+        });
+    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
