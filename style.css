@@ -88,55 +88,29 @@ body.timeline {
 }
 
 /* Home Section */
+/* Overriding some .home styles to match the neon container approach */
 .home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: block; /* Instead of flex if you prefer a more standard layout */
+  padding: 120px 0 0; /* Space for the fixed header */
+  min-height: 100vh; /* Optional: ensure hero fills the screen */
   text-align: center;
-  height: 100vh;
-  padding: 0 10%;
 }
-.home-content h3,
-.home-content h1,
-.home-content h4,
-.home-content p,
-.btn-box {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: slideIn 0.8s ease-out forwards;
+
+/* If you want the .home-content to appear more 'hero-like', you can add: */
+.home-content {
+  margin-top: 2rem;
 }
-.home-content h3 {
-  font-size: 1.5rem;
-  color: #0ef;
-  animation-delay: 0.2s;
-}
-.home-content h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 10px 0;
-  animation-delay: 0.4s;
-}
-.home-content h4 {
-  font-size: 1.8rem;
-  color: #ffffff;
-  animation-delay: 0.6s;
-}
-.home-content p {
-  font-size: 1.1rem;
-  margin-top: 15px;
-  animation-delay: 0.8s;
-}
+
+/* Tweak the .btn-box if you want a neon hover effect */
 .btn-box {
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 25px;
+  padding: 12px 30px;
   background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
   border-radius: 30px;
   color: #000;
   font-weight: bold;
   text-decoration: none;
-  animation-delay: 1s;
   transition: all 0.3s ease;
 }
 .btn-box:hover {
@@ -144,15 +118,42 @@ body.timeline {
   transform: scale(1.1);
 }
 
-/* Neon Container (Reusable) */
-.neon-container {
-  position: relative;
-  background: #2b2e3b;
-  padding: 2.5rem;
-  border-radius: 20px;
-  border: 1px solid #0ef3;
-  margin: 2rem 10%;
-  overflow: hidden;
+/* Because we used .neon on h3, h1, .typed-text, let's ensure the glow stands out: */
+.neon {
+  color: #0ef;
+  text-shadow: 0 0 10px rgba(14, 239, 239, 0.7);
+}
+
+/* If you want a bigger or more obvious glow on your name (h1) */
+.home-name {
+  font-size: 3rem; /* Adjust as needed */
+  font-weight: 900;
+  margin: 1rem 0;
+}
+
+/* Social icons in home section - same approach as the rest of the site */
+.home-sci {
+  margin-top: 2rem;
+}
+.home-sci a {
+  font-size: 2.5rem;
+  color: #0ef;
+  transition: transform 0.3s, color 0.3s;
+  margin: 0 10px;
+}
+.home-sci a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* For better layout of the neon container in the home section */
+.home-hero-container {
+  padding: 4rem 2rem; /* More vertical spacing if you want a “hero” feel */
+  margin: 4rem 8%; /* Adjust margin for a wide layout */
+  text-align: center;
+  /* You can also make it fill most of the viewport if desired:
+     min-height: calc(100vh - 120px);
+  */
 }
 .neon-container::before {
   content: "";
