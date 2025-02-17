@@ -299,19 +299,123 @@ body.timeline {
     transform: scale(1.2); /* Enlarge icon slightly on hover */
 }
 
+/* About Section */
 .about {
-    padding: 2rem 9%;
-    min-height: auto;
+    padding: 4rem 9%;
+    background: linear-gradient(to right bottom, #f8f9fa 50%, #ffffff 50%);
 }
 
-.about-content {
-    max-width: 800px;
+.about-container {
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.profile-visual {
+    position: relative;
     text-align: center;
 }
 
-.about-content p {
-    font-size: 1.1rem;
-    margin: 1.5rem 0;
-    line-height: 1.6;
+.avatar-frame {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-avatar {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+.tech-badges {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.tech-badges i {
+    font-size: 2.5rem;
+    color: #2f3542;
+    transition: all 0.3s ease;
+}
+
+.about-content .subtitle {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.dynamic-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+.focus-text {
+    font-size: 1.4rem;
+    color: #2f3542;
+    margin-bottom: 1.5rem;
+}
+
+.tech-stack {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tech-stack li {
+    margin: 1rem 0;
+    padding: 0.8rem 1.2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.current-obsession {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #e8f4fc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.highlight {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.3rem 0.8rem;
+    background: #fff;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* Hover Effects */
+.avatar-frame:hover {
+    transform: translateY(-5px);
+}
+
+.tech-badges i:hover {
+    color: #3498db;
+    transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-visual {
+        max-width: 70%;
+        margin: 0 auto 2rem;
+    }
 }
