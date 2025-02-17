@@ -1,4 +1,4 @@
-/* General Styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +7,28 @@
     scroll-behavior: smooth;
 }
 
+/* Blue Gradient Background for Main Page */
 body.index {
     background: linear-gradient(135deg, #141e30, #243b55);
     color: #ffffff;
     line-height: 1.6;
+}
+
+/* Timeline Page Background */
+body.timeline {
+    background: linear-gradient(135deg, #243b55, #1CB5E0);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #0ef;
+    border-radius: 5px;
 }
 
 /* Header */
@@ -27,34 +45,98 @@ body.index {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.logo {
+.header .logo {
     font-size: 1.5rem;
+    font-weight: bold;
     color: #0ef;
     text-decoration: none;
-    font-weight: 600;
+    letter-spacing: 1px;
 }
 
-.navbar a {
+.header nav a {
     color: #fff;
     text-decoration: none;
     margin-left: 20px;
+    font-size: 1rem;
     transition: color 0.3s;
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
 }
 
-.navbar a:hover,
-.navbar a.active {
+.header nav a:hover,
+.header nav a.active {
     color: #0ef;
 }
 
-/* Sections */
-.subtitle {
+.header nav a {
+    animation-delay: calc(var(--i) * 0.2s);
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    font-size: 2.5rem;
-    color: #0ef;
-    margin: 80px 0 40px;
+    height: 100vh;
+    padding: 0 10%;
 }
 
-/* About Section */
+.home-content h3,
+.home-content h1,
+.home-content h4,
+.home-content p,
+.btn-box {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+.home-content h3 {
+    font-size: 1.5rem;
+    color: #0ef;
+    animation-delay: 0.2s;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px 0;
+    animation-delay: 0.4s;
+}
+
+.home-content h4 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    animation-delay: 0.6s;
+}
+
+.home-content p {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    animation-delay: 0.8s;
+}
+
+.btn-box {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 30px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    animation-delay: 1s;
+    transition: all 0.3s ease;
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 15px rgba(14, 239, 239, 0.6);
+    transform: scale(1.1);
+}
+
+/* About Section (Neon/Aesthetic) */
 .about {
     padding: 8rem 9% 4rem;
     background: linear-gradient(135deg, #141e30dd, #243b55dd);
@@ -107,10 +189,20 @@ body.index {
 .tech-badges i {
     font-size: 2.5rem;
     color: #0ef;
+    transition: all 0.3s ease;
     padding: 1rem;
     background: #2b2e3b;
     border-radius: 10px;
-    transition: all 0.3s ease;
+}
+
+/* Pulse animation for icons */
+.pulse {
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
 }
 
 .tech-badges i:hover {
@@ -119,7 +211,7 @@ body.index {
     box-shadow: 0 0 15px rgba(14, 239, 239, 0.4);
 }
 
-.dynamic-content {
+.about-content .dynamic-content {
     background: #2b2e3b;
     padding: 2.5rem;
     border-radius: 20px;
@@ -128,7 +220,7 @@ body.index {
     overflow: hidden;
 }
 
-.dynamic-content::before {
+.about-content .dynamic-content::before {
     content: '';
     position: absolute;
     top: -50%;
@@ -138,10 +230,16 @@ body.index {
     background: linear-gradient(45deg, transparent, #0ef, transparent);
     animation: rotate 6s linear infinite;
 }
-
 @keyframes rotate {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.focus-text {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .neon {
@@ -170,21 +268,30 @@ body.index {
     transform: translateX(10px);
 }
 
+.tech-stack i {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
 .current-obsession {
+    position: relative;
+    z-index: 1;
     padding: 1.5rem;
     background: #141e30;
     border-radius: 10px;
     margin-top: 2rem;
     border: 1px solid #0ef3;
+    text-align: center;
 }
 
 .neon-box {
     display: inline-block;
     padding: 0.5rem 1.2rem;
-    margin: 0 0.5rem;
+    margin: 0.5rem 0.5rem;
     background: #0ef1;
     border-radius: 30px;
     border: 1px solid #0ef;
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 
@@ -194,7 +301,29 @@ body.index {
     box-shadow: 0 0 15px #0ef;
 }
 
-/* Skills & Certifications */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .profile-visual {
+        max-width: 80%;
+        margin: 0 auto 3rem;
+    }
+    .about-content .dynamic-content {
+        padding: 1.5rem;
+    }
+}
+
+/* Skills/Certifications/Projects Sections */
+.section h1,
+.subtitle {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0ef;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -205,28 +334,176 @@ body.index {
 .skill-box {
     background: #2b2e3b;
     border-radius: 10px;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .skill-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(14, 239, 239, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsive Design */
+.skill-box img {
+    max-width: 30px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Larger Images for Projects and Certifications */
+#Projects .skill-box img,
+#Certifications .skill-box img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+#Projects .skill-box:hover img,
+#Certifications .skill-box:hover img {
+    transform: scale(1.2);
+}
+
+/* Social Media Icons in Home & Contact */
+.home-sci {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home-sci a {
+    font-size: 2.5rem;
+    color: #0ef;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.home-sci a:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+/* Contact Section */
+.contact-list {
+    list-style: none;
+    margin: 1rem 0;
+}
+.contact-list li {
+    margin: 0.8rem 0;
+    font-size: 1.1rem;
+}
+
+/* "Go to Top" Button */
+.top {
+    position: fixed;
+    right: 20px;
+    bottom: -60px;
+    font-size: 2rem;
+    background: #0ef;
+    color: #111;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 9999;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.top.active {
+    bottom: 20px;
+}
+
+/* Timeline Page Items */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 10%;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    background: #2b2e3b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(14, 239, 239, 0.6);
+}
+
+.timeline-item img {
+    max-width: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.timeline-item .content h2 {
+    font-size: 1.5rem;
+    color: #0ef;
+    margin-bottom: 10px;
+}
+
+.timeline-item .content h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.timeline-item .content small {
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+.timeline-item .content p {
+    color: #bbbbbb;
+    font-size: 1rem;
+}
+
 @media (max-width: 768px) {
-    .about-grid {
-        grid-template-columns: 1fr;
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
-    
-    .profile-visual {
-        max-width: 80%;
-        margin: 0 auto 3rem;
+    .timeline-item img {
+        margin-bottom: 10px;
     }
-    
-    .skills-container {
-        margin: 0 5%;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Reveal animation class (triggered by JS) */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
