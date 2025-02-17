@@ -64,41 +64,56 @@
 </html>
 
 
+<!-- Add Font Awesome CDN in head section -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <!-- About Section -->
 <section class="about" id="About">
+    <h1 class="subtitle">About <span>Me</span></h1>
     <div class="about-container">
         <div class="about-grid">
             <!-- Profile Visual -->
-            <div class="profile-visual">
+            <div class="profile-visual reveal">
                 <div class="avatar-frame">
                     <img src="./img/avatar.png" alt="Lokesh Avatar" class="profile-avatar">
                     <div class="tech-badges">
-                        <i class="fab fa-aws"></i>
-                        <i class="fas fa-code"></i>
-                        <i class="fas fa-cloud"></i>
-                        <i class="fas fa-database"></i>
+                        <i class="fab fa-aws pulse"></i>
+                        <i class="fas fa-code pulse"></i>
+                        <i class="fas fa-cloud pulse"></i>
+                        <i class="fas fa-database pulse"></i>
                     </div>
                 </div>
             </div>
 
             <!-- Content -->
-            <div class="about-content">
-                <h1 class="subtitle">Cloud Alchemist<span class="wave">👨💻</span></h1>
+            <div class="about-content reveal">
                 <div class="dynamic-content">
-                    <p class="focus-text">Turning cloud complexity into <span>scalable solutions</span></p>
+                    <p class="focus-text">Turning cloud complexity into <span class="neon">scalable solutions</span></p>
                     
                     <div class="about-passion">
-                        <p>I architect battle-tested AWS infrastructure that survives real-world data storms ⚡. My weapons of choice:</p>
+                        <p>I architect <span class="neon">AWS infrastructure</span> that powers data-intensive applications. Core competencies:</p>
                         <ul class="tech-stack">
-                            <li><span>🛠️</span> IaC-powered pipelines (Terraform + ArgoCD)</li>
-                            <li><span>🔐</span> Security-first DevOps practices</li>
-                            <li><span>📊</span> ML-ready data architectures</li>
+                            <li>
+                                <i class='bx bxs-component neon'></i>
+                                <span>Infrastructure as Code</span> (Terraform + ArgoCD)
+                            </li>
+                            <li>
+                                <i class='bx bx-shield-quarter neon'></i>
+                                <span>Security-First DevOps</span> (AWS EKS + GitOps)
+                            </li>
+                            <li>
+                                <i class='bx bx-brain neon'></i>
+                                <span>ML Data Pipelines</span> (PySpark + Airflow)
+                            </li>
                         </ul>
                     </div>
 
                     <div class="current-obsession">
-                        <p>Currently geeking out on: <br>
-                        <span class="highlight">K8s cost optimization</span> • <span class="highlight">GenAI pipelines</span> • <span class="highlight">Lakehouse patterns</span></p>
+                        <p>Currently optimizing: 
+                            <span class="neon-box">K8s CostOps</span>
+                            <span class="neon-box">GenAI Pipelines</span>
+                            <span class="neon-box">Lakehouse Architectures</span>
+                        </p>
                     </div>
                 </div>
             </div>
