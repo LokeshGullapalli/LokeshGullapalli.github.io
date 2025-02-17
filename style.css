@@ -299,3 +299,19 @@ body.timeline {
     transform: scale(1.2); /* Enlarge icon slightly on hover */
 }
 
+.about {
+    padding: 2rem 9%;
+    min-height: auto;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+}
