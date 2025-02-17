@@ -1,335 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lokesh Gullapalli - Data Engineer Portfolio showcasing skills, certifications, projects, and experiences in data engineering, cloud, and DevOps.">
-    <meta name="keywords" content="Lokesh Gullapalli, Data Engineer, AWS, DevOps, Portfolio">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Lokesh Gullapalli - Data Engineer Portfolio showcasing skills, certifications, projects, and experiences in data engineering, cloud, and DevOps."
+  />
+  <meta
+    name="keywords"
+    content="Lokesh Gullapalli, Data Engineer, AWS, DevOps, Portfolio"
+  />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Lokesh Gullapalli</title>
+  <title>Lokesh Gullapalli</title>
 
-    <!-- Google Fonts & Boxicons -->
-    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <!-- Google Fonts & Boxicons -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
 
-    <!-- Font Awesome for Neon Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Font Awesome for Neon Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="./style.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./style.css" />
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- Scripts -->
+  <script
+    src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"
+    defer
+  ></script>
+  <script src="./script.js" defer></script>
 </head>
 <body class="index">
-    <!-- Header -->
-    <header class="header" id="header">
-        <a class="logo" href="#Home">Lokesh Gullapalli</a>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="menu-icon"><i class='bx bx-menu'></i></label>
-        <nav class="navbar" id="myLinks">
-            <a href="#Home" style="--i:1" class="active">Home</a>
-            <a href="#About" style="--i:2">About</a>
-            <a href="#Skills" style="--i:3">Skills</a>
-            <a href="#Certifications" style="--i:4">Certifications</a>
-            <a href="#Projects" style="--i:5">Projects</a>
-            <a href="#Contact" style="--i:6">Contact</a>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="header" id="header">
+    <a class="logo" href="#Home">Lokesh Gullapalli</a>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon"><i class="bx bx-menu"></i></label>
+    <nav class="navbar" id="myLinks">
+      <a href="#Home" style="--i:1" class="active">Home</a>
+      <a href="#About" style="--i:2">About</a>
+      <a href="#Skills" style="--i:3">Skills</a>
+      <a href="#Certifications" style="--i:4">Certifications</a>
+      <a href="#Projects" style="--i:5">Projects</a>
+      <a href="#Contact" style="--i:6">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Home Section -->
-    <section class="home" id="Home">
-        <div class="home-content">
-            <h3 style="--i:1">Hello, I'm</h3>
-            <h1 style="--i:2">Lokesh Gullapalli</h1>
-            <h4 style="--i:3">I'm passionate about <span class="typed-text"></span></h4>
-            <p style="--i:4">I specialize in designing scalable data pipelines, optimizing cloud infrastructure, and delivering efficient data-driven solutions.</p>
-            <a href="./timeline.html" class="btn-box" style="--i:5">View My Journey</a>
+  <!-- Home Section -->
+  <section class="home" id="Home">
+    <div class="home-content">
+      <h3 style="--i:1">Hello, I'm</h3>
+      <h1 style="--i:2">Lokesh Gullapalli</h1>
+      <h4 style="--i:3">
+        I'm passionate about <span class="typed-text"></span>
+      </h4>
+      <p style="--i:4">
+        I specialize in designing scalable data pipelines, optimizing cloud
+        infrastructure, and delivering efficient data-driven solutions.
+      </p>
+      <a href="./timeline.html" class="btn-box" style="--i:5"
+        >View My Journey</a
+      >
+    </div>
+    <div class="home-sci">
+      <a
+        href="https://www.linkedin.com/in/lokesh-gullapalli/"
+        style="--i:6"
+        target="_blank"
+        ><i class="bx bxl-linkedin"></i
+      ></a>
+      <a
+        href="https://github.com/LokeshGullapalli"
+        style="--i:7"
+        target="_blank"
+        ><i class="bx bxl-github"></i
+      ></a>
+      <a
+        href="https://medium.com/@lokeshchowdary7117"
+        style="--i:7"
+        target="_blank"
+        ><i class="bx bxl-medium"></i
+      ></a>
+    </div>
+  </section>
+
+  <!-- About Section (Neon Style) -->
+  <section class="about reveal" id="About">
+    <h1 class="subtitle">About <span>Me</span></h1>
+    <div class="neon-container"><!-- Re-usable neon wrapper -->
+      <div class="about-grid">
+        <!-- Profile Visual -->
+        <div class="profile-visual reveal">
+          <div class="avatar-frame">
+            <img
+              src="./img/avatar.png"
+              alt="Lokesh Avatar"
+              class="profile-avatar"
+            />
+            <div class="tech-badges">
+              <!-- Pulsing Font Awesome icons -->
+              <i class="fab fa-aws pulse"></i>
+              <i class="fas fa-code pulse"></i>
+              <i class="fas fa-cloud pulse"></i>
+              <i class="fas fa-database pulse"></i>
+            </div>
+          </div>
         </div>
+
+        <!-- About Content -->
+        <div class="about-content reveal">
+          <div class="dynamic-content">
+            <p class="focus-text">
+              Turning cloud complexity into
+              <span class="neon">scalable solutions</span>
+            </p>
+            <div class="about-passion">
+              <p>
+                I architect battle-tested
+                <span class="neon">AWS infrastructure</span> that survives
+                real-world data storms ⚡. My weapons of choice:
+              </p>
+              <ul class="tech-stack">
+                <li>
+                  <i class="bx bxs-component neon"></i>
+                  <span>IaC-powered pipelines</span> (Terraform + ArgoCD)
+                </li>
+                <li>
+                  <i class="bx bx-shield-quarter neon"></i>
+                  <span>Security-first DevOps</span> (AWS EKS + GitOps)
+                </li>
+                <li>
+                  <i class="bx bx-brain neon"></i>
+                  <span>ML-ready data architectures</span>
+                  (Airflow, Lakehouse Patterns)
+                </li>
+              </ul>
+            </div>
+            <div class="current-obsession">
+              <p>
+                Currently geeking out on:
+                <span class="neon-box">K8s cost optimization</span>
+                <span class="neon-box">GenAI pipelines</span>
+                <span class="neon-box">Lakehouse patterns</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="Skills" class="reveal">
+    <h1 class="subtitle">My <span>Skills</span></h1>
+    <div class="neon-container">
+      <p class="focus-text neon">
+        Below are some of my key technologies and tools.
+      </p>
+      <div class="skills-container">
+        <div class="skill-box reveal">
+          <img src="./img/AWS.png" alt="AWS" />
+          <p>AWS</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/python.png" alt="Python" />
+          <p>Python</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/Go.png" alt="Go" />
+          <p>Go</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/Terraform.png" alt="Terraform" />
+          <p>Terraform</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/Docker.png" alt="Docker" />
+          <p>Docker</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/Kubernetes.png" alt="Kubernetes" />
+          <p>Kubernetes</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/react.png" alt="React" />
+          <p>React</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/Airflow.png" alt="Apache Airflow" />
+          <p>Apache Airflow</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/RStudio.png" alt="R" />
+          <p>R</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/mysql.png" alt="MySQL" />
+          <p>MySQL</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/nodejs.png" alt="Node.js" />
+          <p>Node.js</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/HTML5.png" alt="HTML" />
+          <p>HTML</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/CSS3.png" alt="CSS" />
+          <p>CSS</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/js.png" alt="JavaScript" />
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/git.png" alt="Git" />
+          <p>Git</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/github.png" alt="GitHub" />
+          <p>GitHub</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/mongodb.png" alt="MongoDB" />
+          <p>MongoDB</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/linux.png" alt="Linux" />
+          <p>Linux</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/Azure.png" alt="Azure" />
+          <p>Azure</p>
+        </div>
+        <div class="skill-box reveal">
+          <img src="./img/GCP.png" alt="GCP" />
+          <p>GCP</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="Certifications" class="reveal">
+    <h1 class="subtitle">My <span>Certifications</span></h1>
+    <div class="neon-container">
+      <p class="focus-text neon">
+        Credly & other official badges that highlight my qualifications.
+      </p>
+      <div class="skills-container">
+        <div class="skill-box reveal">
+          <a
+            href="https://www.credly.com/badges/97e8ee03-6d76-4d65-af14-cac2849d2b96/"
+            target="_blank"
+          >
+            <img
+              class="large-img"
+              src="./img/aws_solutions_architect.png"
+              alt="AWS Solutions Architect"
+            />
+            <p>AWS Solutions Architect – Associate</p>
+          </a>
+        </div>
+        <div class="skill-box reveal">
+          <a
+            href="https://www.credly.com/badges/7e6f9047-9467-42e1-8d1e-4d712b7c6657/"
+            target="_blank"
+          >
+            <img class="large-img" src="./img/aws_ml.png" alt="AWS Machine Learning" />
+            <p>AWS Machine Learning</p>
+          </a>
+        </div>
+        <div class="skill-box reveal">
+          <a
+            href="https://learn.microsoft.com/en-us/users/lokeshgullapalli-5892/credentials/a4b23c425e20b1c5?ref=https%3A%2F%2Fwww.linkedin.com%2F"
+            target="_blank"
+          >
+            <img class="large-img" src="./img/azure_cert.png" alt="Azure Fundamentals" />
+            <p>Azure Fundamentals</p>
+          </a>
+        </div>
+        <div class="skill-box reveal">
+          <a
+            href="https://www.credly.com/badges/4e6443a4-5131-4228-b00d-0e123b429f81"
+            target="_blank"
+          >
+            <img
+              class="large-img"
+              src="./img/aws_practitioner.png"
+              alt="AWS Cloud Practitioner"
+            />
+            <p>AWS Cloud Practitioner</p>
+          </a>
+        </div>
+        <div class="skill-box reveal">
+          <a
+            href="https://www.linkedin.com/learning/certificates/72ff1bb153c89a4ce567191b61394735586955605d3880e1d0cfd9255276fec7?u=70198226"
+            target="_blank"
+          >
+            <img class="large-img" src="./img/gen_ai.png" alt="Gen AI" />
+            <p>Gen AI by Microsoft</p>
+          </a>
+        </div>
+        <div class="skill-box reveal">
+          <a
+            href="https://www.credly.com/badges/91118350-2e50-45ac-8838-6273b7d79b76/print"
+            target="_blank"
+          >
+            <img
+              class="large-img"
+              src="./img/aws_data_engineer.png"
+              alt="AWS Data Engineer"
+            />
+            <p>AWS Academy Data Engineer</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="Projects" class="reveal">
+    <h1 class="subtitle">My <span>Projects</span></h1>
+    <div class="neon-container">
+      <p class="focus-text neon">
+        Key personal & academic projects demonstrating my abilities.
+      </p>
+      <div class="skills-container">
+        <div class="skill-box reveal">
+          <img
+            class="large-img"
+            src="./img/adversarial.png"
+            alt="Adversarial Learning Project"
+          />
+          <h3>Adversarial Learning</h3>
+          <p>
+            Evaluated XGBoost & RF models for robustness under adversarial attacks.
+          </p>
+          <a
+            href="https://github.com/LokeshGullapalli/Robust-Network-Intrusion-Detection-with-Random-Forest-XGBoost-under-Adversarial-Attacks"
+            target="_blank"
+          >
+            <i class="bx bxl-github"></i> GitHub
+          </a>
+        </div>
+        <div class="skill-box reveal">
+          <img
+            class="large-img"
+            src="./img/cold_email.png"
+            alt="Cold Email Generator Project"
+          />
+          <h3>Cold Email Generator</h3>
+          <p>
+            Streamlit app with LangChain & Groq for AI-driven job parsing and email
+            creation.
+          </p>
+          <a
+            href="https://github.com/LokeshGullapalli/Cold_Email_Generator"
+            target="_blank"
+          >
+            <i class="bx bxl-github"></i> GitHub
+          </a>
+        </div>
+        <div class="skill-box reveal">
+          <img
+            class="large-img"
+            src="./img/step.png"
+            alt="Step Counter App Project"
+          />
+          <h3>Step Counter App</h3>
+          <p>React Native app for daily step tracking, integrating real-time sensors.</p>
+          <a
+            href="https://github.com/LokeshGullapalli/StepCounter_ReactExpo"
+            target="_blank"
+          >
+            <i class="bx bxl-github"></i> GitHub
+          </a>
+        </div>
+        <div class="skill-box reveal">
+          <img class="large-img" src="./img/DevSecOps.png" alt="Zero-Trust DevSecOps" />
+          <h3>Zero-Trust DevSecOps</h3>
+          <p>
+            Code-to-cluster security for AWS EKS—Terraform + ArgoCD automation with
+            one-click compliance.
+          </p>
+          <a
+            href="https://medium.com/@lokeshchowdary7117/build-a-scalable-devsecops-pipeline-on-aws-eks-with-terraform-argocd-and-kubernetes-5630478a21b8"
+            target="_blank"
+          >
+            <i class="bx bxl-medium"></i> Medium
+          </a>
+        </div>
+        <div class="skill-box reveal">
+          <img class="large-img" src="./img/UTD.png" alt="UTD" />
+          <h3>Academic Lakehouse Revolution</h3>
+          <p>
+            Modernize academic data with AWS Lakehouse: AI-ready analytics,
+            governance, and cost-efficient retention.
+          </p>
+          <a
+            href="https://medium.com/aws-tip/modernizing-university-data-management-with-a-lakehouse-architecture-5e0f1864e580"
+            target="_blank"
+          >
+            <i class="bx bxl-medium"></i> Medium
+          </a>
+        </div>
+        <div class="skill-box reveal">
+          <img class="large-img" src="./img/AWS.png" alt="AWS Data Engineer" />
+          <h3>Data Pipeline on AWS</h3>
+          <p>
+            Building a Comprehensive Data Pipeline on AWS: From Raw Ingestion to
+            Interactive Insights
+          </p>
+          <a
+            href="https://medium.com/@lokeshchowdary7117/building-a-comprehensive-data-pipeline-on-aws-from-raw-ingestion-to-interactive-insights-7eede38c2ac7"
+            target="_blank"
+          >
+            <i class="bx bxl-medium"></i> Medium
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="Contact" class="reveal">
+    <h1 class="subtitle">Contact <span>Me</span></h1>
+    <div class="neon-container">
+      <center>
+        <p>Feel free to reach out for collaborations or opportunities!</p>
+        <ul class="contact-list">
+          <li><i class="bx bxs-phone-call"></i> (972) 977-0569</li>
+          <li><i class="bx bxl-gmail"></i> lokeshchowdary7117@gmail.com</li>
+        </ul>
         <div class="home-sci">
-            <a href="https://www.linkedin.com/in/lokesh-gullapalli/" style="--i:6" target="_blank"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/LokeshGullapalli" style="--i:7" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://medium.com/@lokeshchowdary7117" style="--i:7" target="_blank"><i class='bx bxl-medium'></i></a>
+          <a
+            href="https://www.linkedin.com/in/lokesh-gullapalli/"
+            style="--i:6"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/LokeshGullapalli"
+            style="--i:7"
+            target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://medium.com/@lokeshchowdary7117"
+            style="--i:7"
+            target="_blank"
+            ><i class="bx bxl-medium"></i
+          ></a>
         </div>
-    </section>
+      </center>
+    </div>
+  </section>
 
-    <!-- About Section (Updated with Sample Aesthetics) -->
-    <section class="about reveal" id="About">
-        <h1 class="subtitle">About <span>Me</span></h1>
-        <div class="about-container">
-            <div class="about-grid">
-                <!-- Profile Visual -->
-                <div class="profile-visual reveal">
-                    <div class="avatar-frame">
-                        <img src="./img/avatar.png" alt="Lokesh Avatar" class="profile-avatar">
-                        <div class="tech-badges">
-                            <!-- Pulsing Font Awesome icons -->
-                            <i class="fab fa-aws pulse"></i>
-                            <i class="fas fa-code pulse"></i>
-                            <i class="fas fa-cloud pulse"></i>
-                            <i class="fas fa-database pulse"></i>
-                        </div>
-                    </div>
-                </div>
+  <!-- Go to Top Button -->
+  <a href="#Home" class="top"><i class="bx bx-up-arrow-alt"></i></a>
 
-                <!-- About Content -->
-                <div class="about-content reveal">
-                    <div class="dynamic-content">
-                        <p class="focus-text">
-                            Turning cloud complexity into 
-                            <span class="neon">scalable solutions</span>
-                        </p>
-                        <div class="about-passion">
-                            <p>
-                                I architect battle-tested <span class="neon">AWS infrastructure</span> that survives real-world data storms ⚡. My weapons of choice:
-                            </p>
-                            <ul class="tech-stack">
-                                <li>
-                                    <i class='bx bxs-component neon'></i>
-                                    <span>IaC-powered pipelines</span> (Terraform + ArgoCD)
-                                </li>
-                                <li>
-                                    <i class='bx bx-shield-quarter neon'></i>
-                                    <span>Security-first DevOps</span> (AWS EKS + GitOps)
-                                </li>
-                                <li>
-                                    <i class='bx bx-brain neon'></i>
-                                    <span>ML-ready data architectures</span> (Airflow, Lakehouse Patterns)
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="current-obsession">
-                            <p>
-                                Currently geeking out on:
-                                <span class="neon-box">K8s cost optimization</span>
-                                <span class="neon-box">GenAI pipelines</span>
-                                <span class="neon-box">Lakehouse patterns</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="Skills" class="reveal">
-        <h1 class="subtitle">My <span>Skills</span></h1>
-        <div class="skills-container">
-            <div class="skill-box reveal">
-                <img src="./img/AWS.png" alt="AWS">
-                <p>AWS</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/python.png" alt="Python">
-                <p>Python</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/Go.png" alt="Go">
-                <p>Go</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/Terraform.png" alt="Terraform">
-                <p>Terraform</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/Docker.png" alt="Docker">
-                <p>Docker</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/Kubernetes.png" alt="Kubernetes">
-                <p>Kubernetes</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/react.png" alt="React">
-                <p>React</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/Airflow.png" alt="Apache Airflow">
-                <p>Apache Airflow</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/RStudio.png" alt="R">
-                <p>R</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/mysql.png" alt="MySQL">
-                <p>MySQL</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/nodejs.png" alt="Node.js">
-                <p>Node.js</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/HTML5.png" alt="HTML">
-                <p>HTML</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/CSS3.png" alt="CSS">
-                <p>CSS</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/js.png" alt="JavaScript">
-                <p>JavaScript</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/git.png" alt="Git">
-                <p>Git</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/github.png" alt="GitHub">
-                <p>GitHub</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/mongodb.png" alt="MongoDB">
-                <p>MongoDB</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/linux.png" alt="Linux">
-                <p>Linux</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/Azure.png" alt="Azure">
-                <p>Azure</p>
-            </div>
-            <div class="skill-box reveal">
-                <img src="./img/GCP.png" alt="GCP">
-                <p>GCP</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="Certifications" class="reveal">
-        <h1 class="subtitle">My <span>Certifications</span></h1>
-        <div class="skills-container">
-            <div class="skill-box reveal">
-                <a href="https://www.credly.com/badges/97e8ee03-6d76-4d65-af14-cac2849d2b96/" target="_blank">
-                    <img class="large-img" src="./img/aws_solutions_architect.png" alt="AWS Solutions Architect">
-                    <p>AWS Solutions Architect – Associate</p>
-                </a>
-            </div>
-            <div class="skill-box reveal">
-                <a href="https://www.credly.com/badges/7e6f9047-9467-42e1-8d1e-4d712b7c6657/" target="_blank">
-                    <img class="large-img" src="./img/aws_ml.png" alt="AWS Machine Learning">
-                    <p>AWS Machine Learning</p>
-                </a>
-            </div>
-            <div class="skill-box reveal">
-                <a href="https://learn.microsoft.com/en-us/users/lokeshgullapalli-5892/credentials/a4b23c425e20b1c5?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank">
-                    <img class="large-img" src="./img/azure_cert.png" alt="Azure Fundamentals">
-                    <p>Azure Fundamentals</p>
-                </a>
-            </div>
-            <div class="skill-box reveal">
-                <a href="https://www.credly.com/badges/4e6443a4-5131-4228-b00d-0e123b429f81" target="_blank">
-                    <img class="large-img" src="./img/aws_practitioner.png" alt="AWS Cloud Practitioner">
-                    <p>AWS Cloud Practitioner</p>
-                </a>
-            </div>
-            <div class="skill-box reveal">
-                <a href="https://www.linkedin.com/learning/certificates/72ff1bb153c89a4ce567191b61394735586955605d3880e1d0cfd9255276fec7?u=70198226" target="_blank">
-                    <img class="large-img" src="./img/gen_ai.png" alt="Gen AI">
-                    <p>Gen AI by Microsoft</p>
-                </a>
-            </div>
-            <div class="skill-box reveal">
-                <a href="https://www.credly.com/badges/91118350-2e50-45ac-8838-6273b7d79b76/print" target="_blank">
-                    <img class="large-img" src="./img/aws_data_engineer.png" alt="AWS Data Engineer">
-                    <p>AWS Academy Data Engineer</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="Projects" class="reveal">
-        <h1 class="subtitle">My <span>Projects</span></h1>
-        <div class="skills-container">
-            <div class="skill-box reveal">
-                <img class="large-img" src="./img/adversarial.png" alt="Adversarial Learning Project">
-                <h3>Adversarial Learning</h3>
-                <p>Evaluated XGBoost & RF models for robustness under adversarial attacks.</p>
-                <a href="https://github.com/LokeshGullapalli/Robust-Network-Intrusion-Detection-with-Random-Forest-XGBoost-under-Adversarial-Attacks" target="_blank">
-                    <i class="bx bxl-github"></i> GitHub
-                </a>
-            </div>
-            <div class="skill-box reveal">
-                <img class="large-img" src="./img/cold_email.png" alt="Cold Email Generator Project">
-                <h3>Cold Email Generator</h3>
-                <p>Streamlit app with LangChain & Groq for AI-driven job parsing and email creation.</p>
-                <a href="https://github.com/LokeshGullapalli/Cold_Email_Generator" target="_blank">
-                    <i class="bx bxl-github"></i> GitHub
-                </a>
-            </div>
-            <div class="skill-box reveal">
-                <img class="large-img" src="./img/step.png" alt="Step Counter App Project">
-                <h3>Step Counter App</h3>
-                <p>React Native app for daily step tracking, integrating real-time sensors.</p>
-                <a href="https://github.com/LokeshGullapalli/StepCounter_ReactExpo" target="_blank">
-                    <i class="bx bxl-github"></i> GitHub
-                </a>
-            </div>
-            <div class="skill-box reveal">
-                <img class="large-img" src="./img/DevSecOps.png" alt="Zero-Trust DevSecOps">
-                <h3>Zero-Trust DevSecOps</h3>
-                <p>Code-to-cluster security for AWS EKS—Terraform + ArgoCD automation with one-click compliance.</p>
-                <a href="https://medium.com/@lokeshchowdary7117/build-a-scalable-devsecops-pipeline-on-aws-eks-with-terraform-argocd-and-kubernetes-5630478a21b8" target="_blank">
-                    <i class="bx bxl-medium"></i> Medium
-                </a>
-            </div>
-            <div class="skill-box reveal">
-                <img class="large-img" src="./img/UTD.png" alt="UTD">
-                <h3>Academic Lakehouse Revolution</h3>
-                <p>Modernize academic data with AWS Lakehouse: AI-ready analytics, governance, and cost-efficient retention.</p>
-                <a href="https://medium.com/aws-tip/modernizing-university-data-management-with-a-lakehouse-architecture-5e0f1864e580" target="_blank">
-                    <i class="bx bxl-medium"></i> Medium
-                </a>
-            </div>
-            <div class="skill-box reveal">
-                <img class="large-img" src="./img/AWS.png" alt="AWS Data Engineer">
-                <h3>Data Pipeline on AWS</h3>
-                <p>Building a Comprehensive Data Pipeline on AWS: From Raw Ingestion to Interactive Insights</p>
-                <a href="https://medium.com/@lokeshchowdary7117/building-a-comprehensive-data-pipeline-on-aws-from-raw-ingestion-to-interactive-insights-7eede38c2ac7" target="_blank">
-                    <i class="bx bxl-medium"></i> Medium
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="Contact" class="reveal">
-        <h1 class="subtitle">Contact <span>Me</span></h1>
-        <center>
-            <p>Feel free to reach out for collaborations or opportunities!</p>
-            <ul class="contact-list">
-                <li><i class="bx bxs-phone-call"></i> (972) 977-0569</li>
-                <li><i class="bx bxl-gmail"></i> lokeshchowdary7117@gmail.com</li>
-            </ul>
-            <div class="home-sci">
-                <a href="https://www.linkedin.com/in/lokesh-gullapalli/" style="--i:6" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/LokeshGullapalli" style="--i:7" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://medium.com/@lokeshchowdary7117" style="--i:7" target="_blank"><i class='bx bxl-medium'></i></a>
-            </div>
-        </center>
-    </section>
-
-    <!-- Go to Top Button -->
-    <a href="#Home" class="top"><i class='bx bx-up-arrow-alt'></i></a>
-
-    <!-- Typed.js Initialization + Script -->
-    <script>
-        // Typed.js for home text
-        const typed = new Typed('.typed-text', {
-            strings: ['Cloud Computing', 'Generative AI', 'Machine Learning', 'Data Engineering'],
-            typeSpeed: 50,
-            backSpeed: 30,
-            backDelay: 2000,
-            loop: true,
-        });
-    </script>
-    <script src="./script.js"></script>
+  <!-- Typed.js Initialization (Home Title) -->
+  <script>
+    // typed.js for home text
+    document.addEventListener("DOMContentLoaded", () => {
+      const typed = new Typed(".typed-text", {
+        strings: [
+          "Cloud Computing",
+          "Generative AI",
+          "Machine Learning",
+          "Data Engineering",
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 2000,
+        loop: true,
+      });
+    });
+  </script>
 </body>
 </html>
