@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 /* Body Gradient + Basic Text */
@@ -484,4 +484,21 @@ body.timeline {
   .timeline-item img {
     margin-bottom: 10px;
   }
+}
+
+/* Add will-change to animated elements */
+.header nav a,
+.btn-box,
+.tech-badges i,
+.skill-box,
+.timeline-item,
+.reveal {
+  will-change: transform, opacity;
+}
+
+/* Simplify gradient animations */
+.neon-container::before {
+  /* Change to simpler animation */
+  animation: rotate 8s linear infinite;
+  opacity: 0.2; /* Reduce opacity for better performance */
 }
