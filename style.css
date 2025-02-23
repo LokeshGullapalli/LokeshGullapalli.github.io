@@ -411,12 +411,13 @@ body.timeline {
 /* Reveal Animation for scrolling */
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
 }
+
 .reveal.active {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 /* Timeline Page Items */
@@ -501,4 +502,8 @@ body.timeline {
   /* Change to simpler animation */
   animation: rotate 8s linear infinite;
   opacity: 0.2; /* Reduce opacity for better performance */
+}
+
+html {
+  scroll-behavior: smooth;
 }
